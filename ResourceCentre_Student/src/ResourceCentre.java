@@ -142,6 +142,8 @@ public class ResourceCentre {
 		System.out.println(output);
 	}
 
+	
+	//1.
 	public static String retrieveAllChromebook(ArrayList<Chromebook> chromebookList) {
 		String output = "";
 		
@@ -153,6 +155,9 @@ public class ResourceCentre {
 		
 		return output;
 	}
+	
+	
+	//2.
 	public static void viewAllChromebook(ArrayList<Chromebook> chromebookList) {
 		
 		ResourceCentre.setHeader("CHROMEBOOK LIST");
@@ -180,6 +185,9 @@ public class ResourceCentre {
 		System.out.println("Camcorder added");
 	}
 	
+	
+	
+	//3.
 	public static Chromebook inputChromebook() {	
 		String tag = Helper.readString("Enter asset tag > ");
 		String description = Helper.readString("Enter description > ");
@@ -191,11 +199,18 @@ public class ResourceCentre {
 		return cb;
 		
 	}	
+	
+	
+	//4.
 	public static void addChromebook(ArrayList<Chromebook> chromebookList, Chromebook cb) {
 		// write your code here
 		chromebookList.add(cb);
 		System.out.println("Chromebook added");
 	}
+	
+	
+	
+	
 	
 	//================================= Option 3 Loan an item (CRUD - Update) =================================
 	public static boolean doLoanCamcorder(ArrayList<Camcorder> camcorderList, String tag, String dueDate) {
@@ -227,6 +242,10 @@ public class ResourceCentre {
 		}
 	}
 	
+	
+	
+	//5.
+	
 	public static boolean doLoanChromebook(ArrayList<Chromebook> chromebookList, String tag, String dueDate) {
 		// write your code here
 		boolean isLoaned = false;
@@ -244,6 +263,9 @@ public class ResourceCentre {
 		}
 		return isLoaned;
 	}
+	
+	
+	//6.
 	public static void loanChromebook(ArrayList<Chromebook> chromebookList) {
 		// write your code here
 		ResourceCentre.viewAllChromebook(chromebookList);
@@ -287,6 +309,8 @@ public class ResourceCentre {
 		}
 	}
 
+	//7.
+	
 	public static boolean doReturnChromebook(ArrayList<Chromebook> chromebookList,String tag){
 		boolean isReturned = false;
 		// write your code here
