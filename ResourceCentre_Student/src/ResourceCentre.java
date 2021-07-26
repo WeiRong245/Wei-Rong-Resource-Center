@@ -143,16 +143,33 @@ public class ResourceCentre {
 		System.out.println(output);
 	}
 
-	public static String retrieveAllChromebook(ArrayList<Chromebook> chromebookList) {
-		String output = "";
+	public static String retrieveAllChromebook(ArrayList<Chromebook> 
+	chromebookList) {
+		//String output = "";
 		// write your code here
+		
+		ResourceCentre.setHeader("CHROMEBOOK LIST");
+		String output = String.format("%-10s %-30s %-10s %-10s %-20s\n", "ASSET TAG", "DESCRIPTION",
+				"DUE DATE");
+		 output += retrieveAllChromebook(chromebookList);	
+		System.out.println(output);	
+		
 		return output;
 	}
+	
+	
+	
+	
 	public static void viewAllChromebook(ArrayList<Chromebook> chromebookList) {
 		
 		String output = retrieveAllChromebook(chromebookList);
 		System.out.println(output);
 	}
+	
+	
+	
+	
+	
 
 	//================================= Option 2 Add an item (CRUD - Create) =================================
 	public static Camcorder inputCamcorder() {
@@ -170,15 +187,30 @@ public class ResourceCentre {
 		System.out.println("Camcorder added");
 	}
 	
-	public static Chromebook inputChromebook() {	
+	public static Chromebook inputChromebook() {	//vina
 		Chromebook cb =null;
 		// write your code here
+		
+		
+		
+		
+		
+		
 		return cb;
 		
 	}	
-	public static void addChromebook(ArrayList<Chromebook> chromebookList, Chromebook cb) {
+	public static void addChromebook(ArrayList<Chromebook> chromebookList,
+			Chromebook cb) { //aryna
 		// write your code here
+		
+		
 	}
+	
+	
+	
+	
+	
+	
 	
 	//================================= Option 3 Loan an item (CRUD - Update) =================================
 	public static boolean doLoanCamcorder(ArrayList<Camcorder> camcorderList, String tag, String dueDate) {
@@ -210,12 +242,20 @@ public class ResourceCentre {
 		}
 	}
 	
-	public static boolean doLoanChromebook(ArrayList<Chromebook> chromebookList, String tag, String dueDate) {
+	public static boolean doLoanChromebook(ArrayList<Chromebook> chromebookList, 
+			String tag, String dueDate) { //Roneil
 		// write your code here
+		
+		
+		
 		return true;
 	}
 	public static void loanChromebook(ArrayList<Chromebook> chromebookList) {
 		// write your code here
+		
+		
+		
+		
 		
 		
 	}
@@ -251,12 +291,23 @@ public class ResourceCentre {
 	public static boolean doReturnChromebook(ArrayList<Chromebook> chromebookList,String tag){
 		boolean isReturned = false;
 		// write your code here
+		
+		
+		
 		return isReturned;
 	}
 	public static void returnChromebook(ArrayList<Chromebook> chromebookList) {
 		// write your code here
+		
+		
+		
 	
 	}
+	
+	
+	
+	
+	
 
 
 }
